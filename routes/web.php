@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'ContactController@home')->name('home');
+Route::get('/about','ContactController@about')->name('about');
 Route::get('/contact', 'ContactController@contact')->name('contact');
 Route::post('/contact','ContactController@store')->name('contact.store');
 Route::get('/thanks/{name}','ContactController@thanks')->name('thanks');
